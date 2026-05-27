@@ -1,0 +1,1031 @@
+{
+	"info": {
+		"_postman_id": "8b9e6f3b-fa12-4c59-86c4-118df0ee2f3c",
+		"name": "E-Commerce Churn Analytics API",
+		"description": "Comprehensive Postman Collection representing all system routes of the E-Commerce Churn Analytics API.\nIncludes automated Bearer Token environment binding for protected paths.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth Flow",
+			"description": "Endpoints managing registration, logins, token generation, profile changes, and OTP checks.",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Devanshi Vadiya\",\n  \"email\": \"admin.devanshi@ecommerce.com\",\n  \"password\": \"password123\",\n  \"role\": \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();",
+									"if (responseJson.success && responseJson.token) {",
+									"    pm.environment.set(\"token\", responseJson.token);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin.devanshi@ecommerce.com\",\n  \"password\": \"password123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile (Bearer Auth)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/auth/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Devanshi Vadiya Updated\",\n  \"email\": \"admin.devanshi@ecommerce.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password (Reset request)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin.devanshi@ecommerce.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/forgot-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"resetToken\": \"your_copied_reset_token\",\n  \"newPassword\": \"newSecurePassword123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send OTP for Verification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin.devanshi@ecommerce.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/send-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin.devanshi@ecommerce.com\",\n  \"otp\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/verify-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer CRUD",
+			"description": "Standard REST operations for customer analytics records.",
+			"item": [
+				{
+					"name": "List Customers (Filter / Sort / Page)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers?page=1&limit=10&country=France&sort=-lifetimeValue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "country",
+									"value": "France"
+								},
+								{
+									"key": "sort",
+									"value": "-lifetimeValue"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/replace_with_valid_mongodb_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"replace_with_valid_mongodb_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"age\": 35,\n  \"gender\": \"Male\",\n  \"country\": \"France\",\n  \"city\": \"Paris\",\n  \"membershipYears\": 4,\n  \"loginFrequency\": 18,\n  \"sessionDurationAvg\": 25.4,\n  \"pagesPerSession\": 5.1,\n  \"cartAbandonmentRate\": 32.5,\n  \"wishlistItems\": 5,\n  \"totalPurchases\": 22,\n  \"averageOrderValue\": 112.5,\n  \"daysSinceLastPurchase\": 9,\n  \"discountUsageRate\": 15.0,\n  \"returnsRate\": 2.0,\n  \"emailOpenRate\": 80.0,\n  \"customerServiceCalls\": 0,\n  \"productReviewsWritten\": 4,\n  \"socialMediaEngagementScore\": 65.0,\n  \"mobileAppUsage\": 70.0,\n  \"paymentMethodDiversity\": 3,\n  \"lifetimeValue\": 2475.0,\n  \"creditBalance\": 120.0,\n  \"churned\": false,\n  \"signupQuarter\": \"Q1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace Customer (PUT)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"age\": 36,\n  \"gender\": \"Male\",\n  \"country\": \"France\",\n  \"city\": \"Paris\",\n  \"membershipYears\": 5,\n  \"loginFrequency\": 20,\n  \"sessionDurationAvg\": 26.1,\n  \"pagesPerSession\": 5.5,\n  \"cartAbandonmentRate\": 30.0,\n  \"wishlistItems\": 6,\n  \"totalPurchases\": 25,\n  \"averageOrderValue\": 115.0,\n  \"daysSinceLastPurchase\": 4,\n  \"discountUsageRate\": 10.0,\n  \"returnsRate\": 1.0,\n  \"emailOpenRate\": 85.0,\n  \"customerServiceCalls\": 1,\n  \"productReviewsWritten\": 5,\n  \"socialMediaEngagementScore\": 70.0,\n  \"mobileAppUsage\": 75.0,\n  \"paymentMethodDiversity\": 3,\n  \"lifetimeValue\": 2875.0,\n  \"creditBalance\": 150.0,\n  \"churned\": false,\n  \"signupQuarter\": \"Q1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers/replace_with_valid_mongodb_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"replace_with_valid_mongodb_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer (PATCH)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"creditBalance\": 180.0,\n  \"churned\": true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers/replace_with_valid_mongodb_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"replace_with_valid_mongodb_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/replace_with_valid_mongodb_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"replace_with_valid_mongodb_id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filters & Properties",
+			"description": "Endpoints returning filtered segments of users matching specific parameters.",
+			"item": [
+				{
+					"name": "Get Churned",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/churned?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"churned"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/active?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"active"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get High Value Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/high-value?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"high-value"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Inactive Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/inactive?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"inactive"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by Country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/country/Germany?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"country",
+								"Germany"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by Churn Status Parameter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/churn-status/churned?limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"churn-status",
+								"churned"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search Endpoints",
+			"description": "Fuzzy regular expressions and pre-mapped semantic keyword filters.",
+			"item": [
+				{
+					"name": "Fuzzy Text Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/search/customers?q=berlin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"search",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "berlin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Semantic Keyword: High-Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/search/customers?q=high-value",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"search",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "high-value"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Semantic Keyword: Premium",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/search/customers?q=premium",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"search",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "premium"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytics & Aggregations",
+			"description": "Advanced aggregate metrics calculated on customer data records.",
+			"item": [
+				{
+					"name": "Churn Rate Analysis Grouping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/analytics/customers/churn-analysis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"analytics",
+								"customers",
+								"churn-analysis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retention Performance Rate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/analytics/customers/retention",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"analytics",
+								"customers",
+								"retention"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Session Analysis Range Bucketing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/analytics/customers/session-analysis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"analytics",
+								"customers",
+								"session-analysis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Buyers List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/analytics/customers/top-buyers?limit=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"analytics",
+								"customers",
+								"top-buyers"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Volume Aggregation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/analytics/customers/country-analysis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"analytics",
+								"customers",
+								"country-analysis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General Stats",
+			"description": "Standard statistical calculations (averages, counts, maximums).",
+			"item": [
+				{
+					"name": "Total Customer Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/stats/customers/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stats",
+								"customers",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Average Customer Age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/stats/customers/average-age",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stats",
+								"customers",
+								"average-age"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Average Lifetime Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/stats/customers/average-lifetime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stats",
+								"customers",
+								"average-lifetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Highest Credit Balance Recorded",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/stats/customers/highest-credit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stats",
+								"customers",
+								"highest-credit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Management",
+			"description": "Administrative actions restricted to authenticated admin accounts.",
+			"item": [
+				{
+					"name": "Get Admin Dashboard Stats (Bearer Auth)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/stats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Churn Profile Aggregation (Bearer Auth)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/churn-analysis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"churn-analysis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "System Health",
+			"description": "General server checks.",
+			"item": [
+				{
+					"name": "System Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/system/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"system",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "System Config Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/system/config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"system",
+								"config"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
