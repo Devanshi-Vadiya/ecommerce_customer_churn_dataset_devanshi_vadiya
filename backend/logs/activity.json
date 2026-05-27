@@ -1,0 +1,866 @@
+[
+  {
+    "method": "GET",
+    "url": "/customers?limit=1",
+    "status": 200,
+    "responseTime": "20ms",
+    "timestamp": "2026-05-23T06:22:50.812Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?limit=1",
+    "status": 200,
+    "responseTime": "21ms",
+    "timestamp": "2026-05-23T06:24:40.882Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:24:53.238Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?limit=2",
+    "status": 200,
+    "responseTime": "9ms",
+    "timestamp": "2026-05-23T06:24:53.253Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/churned?limit=1",
+    "status": 200,
+    "responseTime": "22ms",
+    "timestamp": "2026-05-23T06:24:53.278Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/Australia?limit=1",
+    "status": 200,
+    "responseTime": "33ms",
+    "timestamp": "2026-05-23T06:24:53.314Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?country=France&limit=1",
+    "status": 200,
+    "responseTime": "12ms",
+    "timestamp": "2026-05-23T06:24:53.329Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?sort=-lifetimeValue&limit=1",
+    "status": 200,
+    "responseTime": "9ms",
+    "timestamp": "2026-05-23T06:24:53.341Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 200,
+    "responseTime": "24ms",
+    "timestamp": "2026-05-23T06:24:53.369Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/stats/customers/count",
+    "status": 200,
+    "responseTime": "9ms",
+    "timestamp": "2026-05-23T06:24:53.383Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "5ms",
+    "timestamp": "2026-05-23T06:24:53.390Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/predictions/churn",
+    "status": 200,
+    "responseTime": "531ms",
+    "timestamp": "2026-05-23T06:24:53.924Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "HEAD",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "8ms",
+    "timestamp": "2026-05-23T06:24:53.934Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 201,
+    "responseTime": "104ms",
+    "timestamp": "2026-05-23T06:24:54.057Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "69ms",
+    "timestamp": "2026-05-23T06:24:54.129Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/admin/stats",
+    "status": 200,
+    "responseTime": "71ms",
+    "timestamp": "2026-05-23T06:24:54.203Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/middleware/request-time",
+    "status": 200,
+    "responseTime": "0ms",
+    "timestamp": "2026-05-23T06:24:54.206Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/jwt/generate-token",
+    "status": 200,
+    "responseTime": "85ms",
+    "timestamp": "2026-05-23T06:24:54.293Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "24ms",
+    "timestamp": "2026-05-23T06:25:46.570Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?limit=2",
+    "status": 200,
+    "responseTime": "198ms",
+    "timestamp": "2026-05-23T06:25:46.829Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/churned?limit=1",
+    "status": 200,
+    "responseTime": "41ms",
+    "timestamp": "2026-05-23T06:25:46.889Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/Australia?limit=1",
+    "status": 200,
+    "responseTime": "51ms",
+    "timestamp": "2026-05-23T06:25:46.950Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?country=France&limit=1",
+    "status": 200,
+    "responseTime": "125ms",
+    "timestamp": "2026-05-23T06:25:47.082Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?sort=-lifetimeValue&limit=1",
+    "status": 200,
+    "responseTime": "26ms",
+    "timestamp": "2026-05-23T06:25:47.123Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 200,
+    "responseTime": "89ms",
+    "timestamp": "2026-05-23T06:25:47.232Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/stats/customers/count",
+    "status": 200,
+    "responseTime": "10ms",
+    "timestamp": "2026-05-23T06:25:47.255Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "18ms",
+    "timestamp": "2026-05-23T06:25:47.281Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "3ms",
+    "timestamp": "2026-05-23T06:26:15.165Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?limit=2",
+    "status": 200,
+    "responseTime": "55ms",
+    "timestamp": "2026-05-23T06:26:15.243Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/churned?limit=1",
+    "status": 200,
+    "responseTime": "13ms",
+    "timestamp": "2026-05-23T06:26:15.263Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/Australia?limit=1",
+    "status": 200,
+    "responseTime": "23ms",
+    "timestamp": "2026-05-23T06:26:15.293Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?country=France&limit=1",
+    "status": 200,
+    "responseTime": "19ms",
+    "timestamp": "2026-05-23T06:26:15.317Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?sort=-lifetimeValue&limit=1",
+    "status": 200,
+    "responseTime": "16ms",
+    "timestamp": "2026-05-23T06:26:15.339Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 200,
+    "responseTime": "44ms",
+    "timestamp": "2026-05-23T06:26:15.388Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/stats/customers/count",
+    "status": 200,
+    "responseTime": "9ms",
+    "timestamp": "2026-05-23T06:26:15.407Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "15ms",
+    "timestamp": "2026-05-23T06:26:15.430Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/predictions/churn",
+    "status": 200,
+    "responseTime": "1326ms",
+    "timestamp": "2026-05-23T06:26:16.766Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "HEAD",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "14ms",
+    "timestamp": "2026-05-23T06:26:16.785Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "2ms",
+    "timestamp": "2026-05-23T06:26:16.793Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 409,
+    "responseTime": "33ms",
+    "timestamp": "2026-05-23T06:26:16.864Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "160ms",
+    "timestamp": "2026-05-23T06:26:17.029Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/admin/stats",
+    "status": 200,
+    "responseTime": "46ms",
+    "timestamp": "2026-05-23T06:26:17.081Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/middleware/request-time",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:26:17.086Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/jwt/generate-token",
+    "status": 200,
+    "responseTime": "130ms",
+    "timestamp": "2026-05-23T06:26:17.224Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "6ms",
+    "timestamp": "2026-05-23T06:26:27.863Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?limit=2",
+    "status": 200,
+    "responseTime": "70ms",
+    "timestamp": "2026-05-23T06:26:27.951Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/churned?limit=1",
+    "status": 200,
+    "responseTime": "10ms",
+    "timestamp": "2026-05-23T06:26:27.968Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/Australia?limit=1",
+    "status": 200,
+    "responseTime": "24ms",
+    "timestamp": "2026-05-23T06:26:27.997Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?country=France&limit=1",
+    "status": 200,
+    "responseTime": "21ms",
+    "timestamp": "2026-05-23T06:26:28.025Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?sort=-lifetimeValue&limit=1",
+    "status": 200,
+    "responseTime": "14ms",
+    "timestamp": "2026-05-23T06:26:28.045Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 200,
+    "responseTime": "47ms",
+    "timestamp": "2026-05-23T06:26:28.102Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/stats/customers/count",
+    "status": 200,
+    "responseTime": "7ms",
+    "timestamp": "2026-05-23T06:26:28.115Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "29ms",
+    "timestamp": "2026-05-23T06:26:28.150Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/predictions/churn",
+    "status": 200,
+    "responseTime": "1346ms",
+    "timestamp": "2026-05-23T06:26:29.505Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "HEAD",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "15ms",
+    "timestamp": "2026-05-23T06:26:29.526Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:26:29.532Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 201,
+    "responseTime": "201ms",
+    "timestamp": "2026-05-23T06:26:29.789Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "147ms",
+    "timestamp": "2026-05-23T06:26:29.944Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/admin/stats",
+    "status": 200,
+    "responseTime": "45ms",
+    "timestamp": "2026-05-23T06:26:30.001Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/middleware/request-time",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:26:30.008Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "POST",
+    "url": "/jwt/generate-token",
+    "status": 200,
+    "responseTime": "132ms",
+    "timestamp": "2026-05-23T06:26:30.144Z",
+    "ip": "::1",
+    "userAgent": "unknown"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "3ms",
+    "timestamp": "2026-05-23T06:28:29.396Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/favicon.ico",
+    "status": 404,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:28:29.496Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/stats/customers/churn-count",
+    "status": 200,
+    "responseTime": "20ms",
+    "timestamp": "2026-05-23T06:28:57.776Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 200,
+    "responseTime": "38ms",
+    "timestamp": "2026-05-23T06:29:26.302Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 304,
+    "responseTime": "0ms",
+    "timestamp": "2026-05-23T06:29:55.957Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?sort=age",
+    "status": 200,
+    "responseTime": "30ms",
+    "timestamp": "2026-05-23T06:30:00.492Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/France?page=1&limit=10",
+    "status": 200,
+    "responseTime": "26ms",
+    "timestamp": "2026-05-23T06:30:19.124Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/:country",
+    "status": 200,
+    "responseTime": "135ms",
+    "timestamp": "2026-05-23T06:30:34.226Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/France?page=1&limit=10",
+    "status": 304,
+    "responseTime": "23ms",
+    "timestamp": "2026-05-23T06:30:50.897Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/country/France",
+    "status": 200,
+    "responseTime": "24ms",
+    "timestamp": "2026-05-23T06:30:56.297Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/search/customers?q=france",
+    "status": 304,
+    "responseTime": "19ms",
+    "timestamp": "2026-05-23T06:31:36.254Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/filter/high-purchases",
+    "status": 200,
+    "responseTime": "22ms",
+    "timestamp": "2026-05-23T06:31:49.937Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "7ms",
+    "timestamp": "2026-05-23T06:32:02.769Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers?country=France&sort=lifetimeValue",
+    "status": 200,
+    "responseTime": "20ms",
+    "timestamp": "2026-05-23T06:32:15.838Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/admin/customers",
+    "status": 401,
+    "responseTime": "2ms",
+    "timestamp": "2026-05-23T06:32:28.781Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/jwt/profile",
+    "status": 401,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-23T06:37:39.766Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/:999",
+    "status": 400,
+    "responseTime": "4ms",
+    "timestamp": "2026-05-23T06:37:59.072Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/999",
+    "status": 400,
+    "responseTime": "3ms",
+    "timestamp": "2026-05-23T06:38:10.431Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers",
+    "status": 200,
+    "responseTime": "17ms",
+    "timestamp": "2026-05-23T06:38:26.733Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/random",
+    "status": 200,
+    "responseTime": "12ms",
+    "timestamp": "2026-05-23T06:38:38.102Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 401,
+    "responseTime": "89ms",
+    "timestamp": "2026-05-23T17:25:11.470Z",
+    "ip": "::1",
+    "userAgent": "PostmanRuntime/7.53.0"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 401,
+    "responseTime": "6ms",
+    "timestamp": "2026-05-23T17:25:33.225Z",
+    "ip": "::1",
+    "userAgent": "PostmanRuntime/7.53.0"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 201,
+    "responseTime": "251ms",
+    "timestamp": "2026-05-23T17:32:12.853Z",
+    "ip": "::1",
+    "userAgent": "PostmanRuntime/7.53.0"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "130ms",
+    "timestamp": "2026-05-23T17:32:19.761Z",
+    "ip": "::1",
+    "userAgent": "PostmanRuntime/7.53.0"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "3ms",
+    "timestamp": "2026-05-26T12:40:56.839Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/favicon.ico",
+    "status": 404,
+    "responseTime": "1ms",
+    "timestamp": "2026-05-26T12:40:56.942Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 200,
+    "responseTime": "72ms",
+    "timestamp": "2026-05-26T12:41:42.498Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/high-engagement",
+    "status": 200,
+    "responseTime": "60ms",
+    "timestamp": "2026-05-26T12:42:46.875Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 304,
+    "responseTime": "126ms",
+    "timestamp": "2026-05-26T12:49:35.907Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 304,
+    "responseTime": "96ms",
+    "timestamp": "2026-05-26T12:49:37.839Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 304,
+    "responseTime": "89ms",
+    "timestamp": "2026-05-26T12:49:39.249Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 304,
+    "responseTime": "87ms",
+    "timestamp": "2026-05-26T12:49:56.556Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 304,
+    "responseTime": "94ms",
+    "timestamp": "2026-05-26T12:50:07.679Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/recent-buyers",
+    "status": 200,
+    "responseTime": "122ms",
+    "timestamp": "2026-05-26T12:53:01.988Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/high-mobile-usage",
+    "status": 200,
+    "responseTime": "112ms",
+    "timestamp": "2026-05-26T12:53:26.470Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  }
+]
