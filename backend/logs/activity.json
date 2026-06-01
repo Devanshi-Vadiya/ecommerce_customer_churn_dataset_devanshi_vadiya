@@ -880,5 +880,50 @@
     "timestamp": "2026-06-01T08:09:17.766Z",
     "ip": "::1",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/churned",
+    "status": 200,
+    "responseTime": "112ms",
+    "timestamp": "2026-06-01T08:19:39.011Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "8ms",
+    "timestamp": "2026-06-01T08:19:59.431Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/",
+    "status": 200,
+    "responseTime": "11ms",
+    "timestamp": "2026-06-01T08:20:44.380Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/analytics/customers/top-buyers",
+    "status": 200,
+    "responseTime": "119ms",
+    "timestamp": "2026-06-01T08:31:14.320Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/customers/",
+    "status": 200,
+    "responseTime": "206ms",
+    "timestamp": "2026-06-01T08:31:20.872Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
   }
 ]
