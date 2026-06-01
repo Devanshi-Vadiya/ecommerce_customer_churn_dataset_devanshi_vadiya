@@ -862,5 +862,23 @@
     "timestamp": "2026-05-26T12:53:26.470Z",
     "ip": "::1",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": 200,
+    "responseTime": "4ms",
+    "timestamp": "2026-06-01T08:09:17.661Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "GET",
+    "url": "/favicon.ico",
+    "status": 404,
+    "responseTime": "1ms",
+    "timestamp": "2026-06-01T08:09:17.766Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
   }
 ]
