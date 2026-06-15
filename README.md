@@ -1,73 +1,192 @@
-# E-Commerce Customer Churn Analytics API
+# E-Commerce Customer Churn Analytics System
 
-This is a RESTful API built with Node.js, Express, and MongoDB for analyzing e-commerce customer churn data.
+A full-stack customer churn analytics platform built to help businesses identify churn patterns, analyze customer behavior, and gain actionable insights through interactive dashboards.
 
 ## Features
-- **Customer Management**: Endpoints to manage customer profiles and churn data.
-- **Analytics**: Retrieve insights and churn predictions based on customer data.
-- **Security**: Includes authentication, rate limiting, and standard security headers.
+
+### Backend Features
+
+* Customer Management APIs for handling customer profiles and churn-related data.
+* Analytics endpoints to generate churn insights and customer retention statistics.
+* JWT-based authentication and authorization.
+* Password hashing using bcryptjs.
+* Rate limiting to prevent abuse.
+* Security headers using Helmet.
+* Request logging with Morgan.
+* Centralized error handling middleware.
+
+### Frontend Features
+
+* Responsive landing page introducing the platform.
+* User registration and login functionality.
+* Authentication state management using Context API.
+* Protected application layout and routing.
+* Interactive dashboard for customer churn insights.
+* Customer listing page with detailed customer views.
+* Integration with backend APIs for real-time data retrieval.
+* Global styling and reusable UI components.
 
 ## Tech Stack
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (via Mongoose)
-- **Security & Utils**: JWT, bcryptjs, Helmet, Express Rate Limit, Morgan
+
+### Frontend
+
+* React
+* Vite
+* Context API
+* JavaScript (ES6+)
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+* Mongoose
+
+### Security & Utilities
+
+* JWT
+* bcryptjs
+* Helmet
+* Express Rate Limit
+* Morgan
 
 ## API Documentation
-The API endpoints are thoroughly documented using Postman. You can view the complete API documentation here:
 
-👉 **[View Postman API Documentation](https://documenter.getpostman.com/view/50839376/2sBXwntsPn)**
+The API endpoints are documented using Postman.
+
+👉 View Postman API Documentation:
+https://documenter.getpostman.com/view/50839376/2sBXwntsPn
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB instance running locally or on the cloud (e.g., MongoDB Atlas)
+
+* Node.js (v14 or higher)
+* MongoDB instance running locally or on MongoDB Atlas
 
 ### Installation
 
 1. Clone the repository.
-2. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Set up environment variables. Create a `.env` file in the `backend` directory with your configuration (e.g., `PORT`, `MONGODB_URI`, `JWT_SECRET`).
 
-5. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   Or start the production server:
-   ```bash
-   npm start
-   ```
+2. Install backend dependencies:
 
-The server will start (default port is usually 5000), and you can test the endpoints as described in the Postman documentation.
+```bash
+cd backend
+npm install
+```
 
-### Local Routes to Test
-Here are a few quick endpoints you can try locally (assuming the server runs on port 5000):
+3. Install frontend dependencies:
 
-**1. Customer Data (`/customers`)**
-- `GET http://localhost:5000/customers/` - Retrieve a paginated list of all customers
-- `GET http://localhost:5000/customers/churned` - Retrieve customers who have churned
-- `GET http://localhost:5000/customers/high-value` - Retrieve high-value customers
+```bash
+cd ../frontend
+npm install
+```
 
-**2. Analytics (`/analytics`)**
-- `GET http://localhost:5000/analytics/customers/top-buyers` - Get top buyers analytics
-- `GET http://localhost:5000/analytics/customers/churn-analysis` - General churn metrics
-- `GET http://localhost:5000/analytics/customers/retention` - Customer retention stats
+4. Configure environment variables.
 
-**3. Authentication (`/auth`)**
-- `POST http://localhost:5000/auth/register` - Register a new user
-- `POST http://localhost:5000/auth/login` - Login and get a JWT token
+Create a `.env` file inside the `backend` directory:
 
-**4. JWT Testing (`/jwt`)**
-- `POST http://localhost:5000/jwt/generate-token` - Generate a new JWT token
-- `GET http://localhost:5000/jwt/profile` - Test accessing a protected route with a JWT token
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-**5. Middleware & Security (`/middleware`)**
-- `GET http://localhost:5000/middleware/rate-limit` - Test the rate limiting functionality
-- `GET http://localhost:5000/middleware/error-handler` - Trigger a test error to check the error handler
+## Running the Application
+
+### Start Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+Or:
+
+```bash
+npm start
+```
+
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
+### Start Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+## Local Routes to Test
+
+### Authentication
+
+* POST `/auth/register`
+* POST `/auth/login`
+
+### Customers
+
+* GET `/customers`
+* GET `/customers/churned`
+* GET `/customers/high-value`
+
+### Analytics
+
+* GET `/analytics/customers/top-buyers`
+* GET `/analytics/customers/churn-analysis`
+* GET `/analytics/customers/retention`
+
+### JWT Testing
+
+* POST `/jwt/generate-token`
+* GET `/jwt/profile`
+
+### Middleware & Security
+
+* GET `/middleware/rate-limit`
+* GET `/middleware/error-handler`
+
+## Frontend Pages
+
+* Landing Page
+* Login Page
+* Registration Page
+* Dashboard
+* Customers List
+* Customer Details
+
+## Project Structure
+
+```text
+backend/
+frontend/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   └── services/
+```
+
+## Future Improvements
+
+* Data visualization charts and graphs.
+* Role-based access control.
+* Export analytics reports.
+* Search and filtering for customers.
+* Predictive churn modeling using machine learning.
