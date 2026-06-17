@@ -925,5 +925,77 @@
     "timestamp": "2026-06-01T08:31:20.872Z",
     "ip": "::1",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/auth/register",
+    "status": 200,
+    "responseTime": "10ms",
+    "timestamp": "2026-06-15T09:33:21.362Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 201,
+    "responseTime": "557ms",
+    "timestamp": "2026-06-15T09:33:21.998Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-06-15T09:33:27.484Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 500,
+    "responseTime": "143ms",
+    "timestamp": "2026-06-15T09:33:27.633Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/auth/register",
+    "status": 200,
+    "responseTime": "0ms",
+    "timestamp": "2026-06-15T09:33:54.423Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/register",
+    "status": 201,
+    "responseTime": "190ms",
+    "timestamp": "2026-06-15T09:33:54.619Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "OPTIONS",
+    "url": "/auth/login",
+    "status": 200,
+    "responseTime": "1ms",
+    "timestamp": "2026-06-15T09:34:00.537Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 500,
+    "responseTime": "140ms",
+    "timestamp": "2026-06-15T09:34:00.682Z",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
   }
 ]
